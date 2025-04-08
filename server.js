@@ -8,8 +8,13 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Middleware
-app.use(cors());
+// Configuración de CORS mejorada
+app.use(cors({
+  origin: ['https://agus-front.vercel.app', 'http://localhost:3000'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+}));
+
 app.use(express.json());
 
 // Importar rutas
@@ -39,13 +44,35 @@ app.get('/', (req, res) => {
   res.send('API del Club de Fútbol San Agustín');
 });
 
-// Conexión a MongoDB
+// Ruta de verificación de estado
+app.get('/api/status', (req, res) => {
+  res.json({ 
+    status: 'online', 
+    message: 'API funcionando correctamente',
+    environment: process.env.NODE_ENV || 'development',
+    timestamp: new Date().toISOString()
+  });
+});
+
+// Conexión a MongoDB con manejo de errores mejorado
 mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
 .then(() => console.log('Conexión a MongoDB establecida'))
-.catch(err => console.error('Error al conectar a MongoDB:', err));
+.catch(err => {
+  console.error('Error al conectar a MongoDB:', err);
+  // No detener la aplicación, permitir que funcione sin base de datos en modo de emergencia
+});
+
+// Manejo de errores global
+app.use((err, req, res, next) => {
+  console.error('Error en la aplicación:', err);
+  res.status(500).json({ 
+    mensaje: 'Error interno del servidor', 
+    error: process.env.NODE_ENV === 'production' ? 'Detalles ocultos en producción' : err.message 
+  });
+});
 
 // Iniciar servidor
 app.listen(PORT, () => {
