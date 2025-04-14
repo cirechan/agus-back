@@ -1,0 +1,306 @@
+{
+  "equipos": [
+    "DELICIAS-CLUB DEPORTIVO 'A'",
+    "EL GANCHO C.F.",
+    "MALLEN-C.D.",
+    "RICLA-C.D.",
+    "ZARAGOZA CFF 'B'",
+    "OLIVER-C.D. 'A'",
+    "ACTUR PABLO IGLESIAS-C.D. 'A'",
+    "SAN AGUSTIN-C.D. 'B'"
+  ],
+  "jugadores": [
+    "DUOYI",
+    "IZAN",
+    "MARCOS",
+    "MANUEL",
+    "JORGE",
+    "PABLO",
+    "ÁLVARO",
+    "QUIQUE",
+    "RAUL",
+    "ÁLVARO",
+    "DEREK DAMIAN",
+    "ANDRES",
+    "JORGE",
+    "MARCOS",
+    "MARIA",
+    "JUAN",
+    "SAMUEL",
+    "JESUS",
+    "GONZALO"
+  ],
+  "staff": {
+    "tecnico": "CANO MONTAÑES, RODRIGO",
+    "delegado": "GIMENO ARTAL, MARIA",
+    "auxiliar": "CIOLAN , IONUT ALEXANDRU"
+  },
+  "partidos": [
+    {
+      "_id": "2d68ff8b-bfe1-460c-a887-415d1e2176f1",
+      "fecha": "2025-02-08T00:00:00.000Z",
+      "hora": "9:30",
+      "equipo": "EL GANCHO C.F.",
+      "rival": "ACTUR PABLO IGLESIAS-C.D. 'A'",
+      "ubicacion": "fuera",
+      "vestuarioLocal": 1,
+      "vestuarioVisitante": 4,
+      "campo": "Campo ACTUR PABLO IGLESIAS-C.D. 'A'",
+      "equipacion": {
+        "color": "verde",
+        "tipo": "principal"
+      },
+      "resultado": {
+        "golesLocal": 4,
+        "golesVisitante": 0
+      }
+    },
+    {
+      "_id": "0ae69569-211f-49fb-a7e8-3fb246c787d3",
+      "fecha": "2025-02-15T00:00:00.000Z",
+      "hora": "12:30",
+      "equipo": "MALLEN-C.D.",
+      "rival": "RICLA-C.D.",
+      "ubicacion": "fuera",
+      "vestuarioLocal": 2,
+      "vestuarioVisitante": 6,
+      "campo": "Campo RICLA-C.D.",
+      "equipacion": {
+        "color": "roja",
+        "tipo": "principal"
+      },
+      "resultado": {
+        "golesLocal": 4,
+        "golesVisitante": 1
+      }
+    },
+    {
+      "_id": "100a89c7-d8b1-470a-8601-0389d3136e63",
+      "fecha": "2025-02-22T00:00:00.000Z",
+      "hora": "12:00",
+      "equipo": "OLIVER-C.D. 'A'",
+      "rival": "ZARAGOZA CFF 'B'",
+      "ubicacion": "fuera",
+      "vestuarioLocal": 2,
+      "vestuarioVisitante": 4,
+      "campo": "Campo ZARAGOZA CFF 'B'",
+      "equipacion": {
+        "color": "blanca",
+        "tipo": "principal"
+      },
+      "resultado": {
+        "golesLocal": 0,
+        "golesVisitante": 0
+      }
+    },
+    {
+      "_id": "bf88382c-cfff-4d84-90ee-90b8968b653c",
+      "fecha": "2025-03-01T00:00:00.000Z",
+      "hora": "12:30",
+      "equipo": "SAN AGUSTIN-C.D. 'B'",
+      "rival": "DELICIAS-CLUB DEPORTIVO 'A'",
+      "ubicacion": "casa",
+      "vestuarioLocal": 1,
+      "vestuarioVisitante": 6,
+      "campo": "Campo Municipal San Agustín",
+      "equipacion": {
+        "color": "roja",
+        "tipo": "principal"
+      },
+      "resultado": {
+        "golesLocal": 6,
+        "golesVisitante": 2
+      }
+    },
+    {
+      "_id": "6f70d29b-5a1c-4a1f-ac56-35fed5a33786",
+      "fecha": "2025-03-08T00:00:00.000Z",
+      "hora": "10:30",
+      "equipo": "ACTUR PABLO IGLESIAS-C.D. 'A'",
+      "rival": "SAN AGUSTIN-C.D. 'B'",
+      "ubicacion": "fuera",
+      "vestuarioLocal": 2,
+      "vestuarioVisitante": 6,
+      "campo": "Campo SAN AGUSTIN-C.D. 'B'",
+      "equipacion": {
+        "color": "azul",
+        "tipo": "principal"
+      },
+      "resultado": {
+        "golesLocal": 3,
+        "golesVisitante": 0
+      }
+    },
+    {
+      "_id": "32bf6be4-e04c-4f85-b7ef-63772cccff18",
+      "fecha": "2025-03-15T00:00:00.000Z",
+      "hora": "11:30",
+      "equipo": "RICLA-C.D.",
+      "rival": "EL GANCHO C.F.",
+      "ubicacion": "fuera",
+      "vestuarioLocal": 1,
+      "vestuarioVisitante": 6,
+      "campo": "Campo EL GANCHO C.F.",
+      "equipacion": {
+        "color": "blanca",
+        "tipo": "principal"
+      },
+      "resultado": {
+        "golesLocal": 5,
+        "golesVisitante": 6
+      }
+    },
+    {
+      "_id": "f975968b-f6bb-44b4-85c6-b4b5063fd943",
+      "fecha": "2025-03-22T00:00:00.000Z",
+      "hora": "11:00",
+      "equipo": "ZARAGOZA CFF 'B'",
+      "rival": "MALLEN-C.D.",
+      "ubicacion": "fuera",
+      "vestuarioLocal": 1,
+      "vestuarioVisitante": 6,
+      "campo": "Campo MALLEN-C.D.",
+      "equipacion": {
+        "color": "roja",
+        "tipo": "principal"
+      },
+      "resultado": {
+        "golesLocal": 5,
+        "golesVisitante": 0
+      }
+    },
+    {
+      "_id": "a4527c1b-e6b7-4145-ac39-b78fc8bbe45e",
+      "fecha": "2025-03-29T00:00:00.000Z",
+      "hora": "10:00",
+      "equipo": "DELICIAS-CLUB DEPORTIVO 'A'",
+      "rival": "OLIVER-C.D. 'A'",
+      "ubicacion": "fuera",
+      "vestuarioLocal": 3,
+      "vestuarioVisitante": 6,
+      "campo": "Campo OLIVER-C.D. 'A'",
+      "equipacion": {
+        "color": "roja",
+        "tipo": "principal"
+      },
+      "resultado": {
+        "golesLocal": 3,
+        "golesVisitante": 1
+      }
+    },
+    {
+      "_id": "cc677854-7539-48ba-8143-bc06658b3a05",
+      "fecha": "2025-04-05T00:00:00.000Z",
+      "hora": "10:30",
+      "equipo": "ACTUR PABLO IGLESIAS-C.D. 'A'",
+      "rival": "RICLA-C.D.",
+      "ubicacion": "fuera",
+      "vestuarioLocal": 3,
+      "vestuarioVisitante": 5,
+      "campo": "Campo RICLA-C.D.",
+      "equipacion": {
+        "color": "verde",
+        "tipo": "principal"
+      },
+      "resultado": {
+        "golesLocal": 4,
+        "golesVisitante": 0
+      }
+    },
+    {
+      "_id": "433b0eb0-76c7-4921-80ed-1a92927e1412",
+      "fecha": "2025-04-12T00:00:00.000Z",
+      "hora": "12:00",
+      "equipo": "EL GANCHO C.F.",
+      "rival": "ZARAGOZA CFF 'B'",
+      "ubicacion": "fuera",
+      "vestuarioLocal": 3,
+      "vestuarioVisitante": 6,
+      "campo": "Campo ZARAGOZA CFF 'B'",
+      "equipacion": {
+        "color": "blanca",
+        "tipo": "principal"
+      },
+      "resultado": {
+        "golesLocal": 3,
+        "golesVisitante": 3
+      }
+    },
+    {
+      "_id": "dc287fef-1560-4b3d-8805-1b2a296b7250",
+      "fecha": "2025-04-19T00:00:00.000Z",
+      "hora": "10:30",
+      "equipo": "MALLEN-C.D.",
+      "rival": "DELICIAS-CLUB DEPORTIVO 'A'",
+      "ubicacion": "fuera",
+      "vestuarioLocal": 1,
+      "vestuarioVisitante": 6,
+      "campo": "Campo DELICIAS-CLUB DEPORTIVO 'A'",
+      "equipacion": {
+        "color": "roja",
+        "tipo": "principal"
+      },
+      "resultado": {
+        "golesLocal": 2,
+        "golesVisitante": 3
+      }
+    },
+    {
+      "_id": "6d0874ec-7e42-41a3-b999-85999638bd3b",
+      "fecha": "2025-04-26T00:00:00.000Z",
+      "hora": "12:00",
+      "equipo": "SAN AGUSTIN-C.D. 'B'",
+      "rival": "OLIVER-C.D. 'A'",
+      "ubicacion": "casa",
+      "vestuarioLocal": 1,
+      "vestuarioVisitante": 5,
+      "campo": "Campo Municipal San Agustín",
+      "equipacion": {
+        "color": "blanca",
+        "tipo": "principal"
+      },
+      "resultado": {
+        "golesLocal": 3,
+        "golesVisitante": 0
+      }
+    },
+    {
+      "_id": "23a40393-0509-4970-9731-bc039869b647",
+      "fecha": "2025-05-03T00:00:00.000Z",
+      "hora": "9:30",
+      "equipo": "RICLA-C.D.",
+      "rival": "SAN AGUSTIN-C.D. 'B'",
+      "ubicacion": "fuera",
+      "vestuarioLocal": 1,
+      "vestuarioVisitante": 4,
+      "campo": "Campo SAN AGUSTIN-C.D. 'B'",
+      "equipacion": {
+        "color": "azul",
+        "tipo": "principal"
+      },
+      "resultado": {
+        "golesLocal": 5,
+        "golesVisitante": 6
+      }
+    },
+    {
+      "_id": "c7d457ec-9aa0-4663-ab65-dd4591b86706",
+      "fecha": "2025-05-10T00:00:00.000Z",
+      "hora": "11:30",
+      "equipo": "ZARAGOZA CFF 'B'",
+      "rival": "ACTUR PABLO IGLESIAS-C.D. 'A'",
+      "ubicacion": "fuera",
+      "vestuarioLocal": 3,
+      "vestuarioVisitante": 6,
+      "campo": "Campo ACTUR PABLO IGLESIAS-C.D. 'A'",
+      "equipacion": {
+        "color": "roja",
+        "tipo": "principal"
+      },
+      "resultado": {
+        "golesLocal": 2,
+        "golesVisitante": 4
+      }
+    }
+  ]
+}
