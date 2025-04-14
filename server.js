@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5000;
 // Configuración de CORS mejorada
 app.use(cors({
   origin: ['https://agus-front.vercel.app', 'http://localhost:3000'],
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
   credentials: true
 }));
 
@@ -27,6 +27,7 @@ const scoutingRoutes = require('./routes/scouting');
 const objetivosRoutes = require('./routes/objetivos');
 const reunionesRoutes = require('./routes/reuniones');
 const usuariosRoutes = require('./routes/usuarios');
+const partidosRoutes = require('./routes/partidos'); // Nueva ruta para partidos
 
 // Usar rutas
 app.use('/api/temporadas', temporadasRoutes);
@@ -38,6 +39,7 @@ app.use('/api/scouting', scoutingRoutes);
 app.use('/api/objetivos', objetivosRoutes);
 app.use('/api/reuniones', reunionesRoutes);
 app.use('/api/usuarios', usuariosRoutes);
+app.use('/api/partidos', partidosRoutes); // Nuevo endpoint para partidos
 
 // Ruta principal
 app.get('/', (req, res) => {
@@ -46,8 +48,8 @@ app.get('/', (req, res) => {
 
 // Ruta de verificación de estado
 app.get('/api/status', (req, res) => {
-  res.json({ 
-    status: 'online', 
+  res.json({
+    status: 'online',
     message: 'API funcionando correctamente',
     environment: process.env.NODE_ENV || 'development',
     timestamp: new Date().toISOString()
@@ -68,9 +70,9 @@ mongoose.connect(process.env.MONGODB_URI, {
 // Manejo de errores global
 app.use((err, req, res, next) => {
   console.error('Error en la aplicación:', err);
-  res.status(500).json({ 
-    mensaje: 'Error interno del servidor', 
-    error: process.env.NODE_ENV === 'production' ? 'Detalles ocultos en producción' : err.message 
+  res.status(500).json({
+    mensaje: 'Error interno del servidor',
+    error: process.env.NODE_ENV === 'production' ? 'Detalles ocultos en producción' : err.message
   });
 });
 
