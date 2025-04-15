@@ -83,3 +83,7 @@ const PartidoSchema = new mongoose.Schema({
 PartidoSchema.index({ equipo: 1, fecha: 1, hora: 1 }, { unique: true });
 
 module.exports = mongoose.model('Partido', PartidoSchema);
+const express = require("express")
+const router = express.Router()
+const Partido = require("../models/Partido")
+

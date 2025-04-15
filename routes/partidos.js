@@ -50,6 +50,14 @@ router.get('/', async (req, res) => {
     res.status(500).json({ mensaje: 'Error al obtener partidos', error: err.message });
   }
 });
+router.get("/test", async (req, res) => {
+  try {
+    const partidos = await Partido.find().limit(10)
+    res.json({ mensaje: "Conexión OK", total: partidos.length, partidos })
+  } catch (err) {
+    res.status(500).json({ mensaje: "Error al obtener partidos", error: err.message })
+  }
+})
 
 // Obtener un partido por ID
 router.get('/:id', async (req, res) => {
@@ -214,6 +222,9 @@ router.get('/estadisticas/equipo/:equipoId', async (req, res) => {
   } catch (err) {
     res.status(500).json({ mensaje: 'Error al obtener estadísticas', error: err.message });
   }
+
+  
 });
 
 module.exports = router;
+
